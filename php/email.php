@@ -6,9 +6,9 @@ if($_POST)
 ##########################################################################################################################################################
 ##########################################################################################################################################################
     
-    $site_title     = "Swimmerland"; //Site Title
-    $to_email       = "youremail@swimmerland.com"; //Replace with your email address
-    $subject        = "Swimmerland - Email "; //Replace with your email default subject
+    $site_title     = "AcquaCerrado"; //Site Title
+    $to_email       = "contato@acquacerrado.com"; //Replace with your email address
+    $subject        = "AcquaCerrado - Email "; //Replace with your email default subject
     
     $success_mssg   = "Your message has been sent successfully. Thank you.";               // Success message
     $error_mssg     = "An error has occurred. Please check your PHP email configuration."; // Error message
