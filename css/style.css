@@ -131,7 +131,11 @@ button {
 }
 
 .main-content {
-    padding: 80px 0;
+    padding: 30px 0;
+}
+
+.main-content-parceiros {
+    padding: 75px 0;
 }
 
 .pad80 {
@@ -287,6 +291,14 @@ nav.navbar {
 div#main-nav .nav {
     padding-top: 20px;
     margin: 0;
+}
+
+
+.select-precos {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    text-align-last: center
 }
 
 div#main-nav h3 {
