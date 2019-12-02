@@ -170,6 +170,10 @@ button {
     margin: 0;
 }
 
+.pricing-basic {
+    padding: 24px;
+}
+
 img {
     -moz-user-select: none;
     /* These user-select properties are inheritable, used to prevent text selection */
@@ -300,6 +304,14 @@ div#main-nav .nav {
     text-align: center;
     text-align-last: center
 }
+
+.select-convites {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    text-align-last: center;
+}
+
 
 div#main-nav h3 {
     text-align: center;
@@ -1326,7 +1338,7 @@ section#pricing .pricing-wrapper {
 }
 
 section#pricing .pricing-header .price {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding: 15px 0;
