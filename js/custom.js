@@ -622,7 +622,7 @@ Author URI: gnodesign.com
                 e.preventDefault();
                 $(".timeline > li").slice(0, 4).fadeIn(600);
                 if ($(".timeline > li:hidden").length == 0) {
-                    $('#loadmsg').html('<div class="alert alert-success">No more timeline events to load.</div>').fadeIn(700);
+                    $('#loadmsg').html('<div class="alert alert-success">Não há mais eventos da linha do tempo para carregar.</div>').fadeIn(700);
                     $("section#timeline .load a").fadeOut(600);
                 }
             });

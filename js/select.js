@@ -96,11 +96,11 @@ $(".select-ultra").on('change', function (e) {
 
         case '1':
                 $('.valor-plano-ultra').html('R$ 2.000');
-                $(`.botao-comprar-ultra`).attr('href', 'https://www.mercadopago.com.br/checkout/v1/redirect/adf2ab9a-9cb1-4157-93f7-33088cd883ab/express/?preference-id=192393632-2ba12644-31cd-4d89-8615-122a24f3ea4c');
+                $('.botao-comprar-ultra').attr('href', 'https://www.mercadopago.com.br/checkout/v1/redirect/adf2ab9a-9cb1-4157-93f7-33088cd883ab/express/?preference-id=192393632-2ba12644-31cd-4d89-8615-122a24f3ea4c');
             break;
         case '2':
                 $('.valor-plano-ultra').html('R$ 2.500');
-                $(`.botao-comprar-ultra`).attr('href', 'https://www.mercadopago.com.br/checkout/v1/redirect/99ecd986-76c5-4546-ab26-d5120d4d672b/express/?preference-id=192393632-1b7c1df3-8621-4e62-8de2-d0dd48f91055');
+                $('.botao-comprar-ultra').attr('href', 'https://www.mercadopago.com.br/checkout/v1/redirect/99ecd986-76c5-4546-ab26-d5120d4d672b/express/?preference-id=192393632-1b7c1df3-8621-4e62-8de2-d0dd48f91055');
             break;
     }
 });
