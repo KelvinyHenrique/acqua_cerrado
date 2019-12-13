@@ -182,7 +182,6 @@ img {
     /* From IE10 only */
     -webkit-user-drag: none;
     /* Prevents dragging of images/divs etc */
-    user-drag: none;
 }
 
 
@@ -2453,6 +2452,10 @@ form#comment-form p {
 /* --------------------------------------
     9. Contact Us
 -------------------------------------- */
+.alert {
+    margin: 0;
+}
+
 
 section#contact {
     background: #ededed;
@@ -2466,6 +2469,7 @@ section#contact p {
 
 form#contact-form {
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 form#contact-form .col-md-12 {

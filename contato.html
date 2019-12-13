@@ -44,7 +44,7 @@
 
                 <!-- Logo -->
                 <div class="col-md-4">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
                     <!-- INSERT YOUR LOGO HERE -->
                 </div>
 
@@ -60,38 +60,34 @@
                         </button>
                     </div>
 
+
                     <div class="collapse navbar-collapse pull-right cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right"
                         id="main-nav">
                         <h3><a href="">Menu</a> </h3>
                         <ul class="nav navbar-nav navbar-right">
                             <li role="presentation">
-                                <a href="index.html">home</a>
-
+                                <a href="index.html" >home</a>
+                             
                             </li>
                             <li class="dropdown" role="presentation">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-expanded="false">paginas<i class="fa fa-caret-down"></i></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="about.html">sobre</a></li>
-                                    <!--   <li><a href="404.html">404</a></li>
-                                <li><a href="coming-soon.html">coming soon</a></li> -->
+                                  <!--   <li><a href="404.html">404</a></li>
+                                    <li><a href="coming-soon.html">coming soon</a></li> -->
                                 </ul>
                             </li>
                             <li class="dropdown" role="presentation">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-expanded="false">blog<i class="fa fa-caret-down"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="blog-listing.html">Posts</a></li>
-                                    <!--  <li><a href="blog-detail.html">blog detail</a></li> -->
+                                    <li><a href="manutencao.html">Posts</a></li>
+                                   <!--  <li><a href="blog-detail.html">blog detail</a></li> -->
                                 </ul>
                             </li>
                             <li class="dropdown" role="presentation">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                    aria-expanded="false">contato<i class="fa fa-caret-down"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="contact.html">contact 1</a></li>
-                                    <li><a href="contact2.html">contact 2</a></li>
-                                </ul>
+                                <a href="contato.html" >Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -130,26 +126,31 @@
             <div class="col-md-8 col-md-offset-2 contact-top">
                 <p>Entre em contato conosco. vamos te responder o mais breve possível.</p>
 
-                <form action="../acqua_cerrado/php/email.php" method="POST" class="formulario-contato">
-                    <div class="form-input-contato">
-                        <input type="text" name="nome">
-                    </div>
-                    <div class="form-input-contato">
-                        <input type="email">
-                    </div>
-                    <div class="form-input-contato">
-                        <input type="text" name="telefone">
-                    </div>
-                    <div class="form-input-contato">
-                        <input type="text" name="assunto">
-                    </div>
-                    <div class="form-input-contato-textarea">
-                        <textarea class="form-control textarea-box" name="mensagem" id="" cols="30"rows="10"></textarea>
-                    </div>
+                <form id="contact-form">
 
-
-                    <input type="submit">
-                </form>
+                        <!-- contact result -->
+                        <div id="contact-result"></div>
+                        <!-- end of contact result -->
+    
+                        <div class="col-md-12">
+                            <input class="form-control input-box" type="text" name="name" placeholder="Seu Nome"">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control input-box" type="email" name="email" placeholder="seu@email.com"">
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form-control input-box" type="tel" name="phone" placeholder="Telefone">
+                        </div>
+    
+                        <div class="col-md-12">
+                            <input class="form-control input-box" type="text" name="subject" placeholder="Assunto"">
+                        </div>
+    
+                        <div class="col-md-12">
+                            <textarea class="form-control textarea-box" rows="8" name="message" placeholder="Escreva sua mensagem..."></textarea>
+                            <button class="btn" type="submit">Send your message</button>
+                        </div>
+                    </form>
 
             </div>
             <!-- End of Contact Form -->

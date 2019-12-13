@@ -6,7 +6,7 @@ if($_POST)
 ##########################################################################################################################################################
     
     $site_title     = "AcquaCerrado"; //Site Title
-    $to_email       = "contato@acquacerrado.com"; //Replace with your email address
+    $to_email       = "contato@acquacerrado.com.br"; //Replace with your email address
     $subject        = "AcquaCerrado - Email "; //Replace with your email default subject
     
     $success_mssg   = "Your message has been sent successfully. Thank you.";               // Success message
