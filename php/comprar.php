@@ -13,7 +13,8 @@ $endereco = $_POST['endereco'];
 $fpagamento = $_POST['fpagamento'];
 
 $to = "contato@acquacerrado.com.br";
-$message = "Email: "$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br/>"."Assunto: ".$assunto."<br/>"."Plano: ".$plano."<br/>"."Endereço: ".$endereco."<br/>"."Forma de Pagamento: ".$fpagamento;
+#$message = "Email: "$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br/>"."Assunto: 
+".$assunto."<br/>"."Plano: ".$plano."<br/>"."Endereço: ".$endereco."<br/>"."Forma de Pagamento: ".$fpagamento;
 
 $headers = "De:". $from;
 $headers = 'Content-type: text/html;' . "\r\n";
