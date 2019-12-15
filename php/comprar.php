@@ -13,8 +13,9 @@ $endereco = $_POST['endereco'];
 $fpagamento = $_POST['fpagamento'];
 
 $to = "contato@acquacerrado.com.br";
-$message = $email."<br/>"."<span>"."O correio do PHP funciona bem"."<span/>".$nome.$telefone.$assunto.$plano.$endereco.$fpagamento;
+$message = $email."<br/>"."<span>"."O correio do PHP funciona bem"."<span/>"."<br/>".$nome.$telefone.$assunto.$plano.$endereco.$fpagamento;
 
+$headers = "De:". $email;
 $headers = 'Content-type: text/html;' . "\r\n";
 
 mail($to, $assunto, $message, $headers);
