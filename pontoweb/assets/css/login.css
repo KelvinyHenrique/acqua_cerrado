@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bahnschrift Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bahnschrift Regular'), url('../fonts/bahnschrift.woff') format('woff');
+    }
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}

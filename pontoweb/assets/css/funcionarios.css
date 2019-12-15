@@ -1,0 +1,13 @@
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.linha {
+    width: 95%;
+}

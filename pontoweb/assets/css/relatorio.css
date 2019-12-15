@@ -1,0 +1,21 @@
+.toporelatorio {
+	width: 100%;
+	background-color: cadetblue;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;;
+}
+
+
+.menutopofuncionariorelatorio {
+	display: flex;
+	width: 100%;
+}
+
+.item-topo-relatorio {
+	margin-left: 10px;
+}
