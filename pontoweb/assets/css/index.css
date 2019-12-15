@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+body{
+    background-image: url("../imagens/background-13-01.svg");
+    background-position: center center;
+  
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+       the content's height is greater than the image's height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+
+}
+
+
+@media (min-width: 1024px){
+    .box-01-index {
+        width: 100%;
+        height: 100%;
+        top:50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .form-index-beta {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-02-index {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-01-index button {
+        width: 30%;
+        height: 70%;
+        margin: 20px;
+        color: #000000;
+        font-size: 44px;
+        font-family: 'Bahnschrift Regular';
+        border: none;
+        border-radius: 17px;
+        box-shadow: 2px 2px 47px 14px rgba(0, 0, 0, 0.664);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        animation-duration: 2s;
+        animation-name: bounceIn;
+    }
+
+    .iconindex i{
+        width: 100%;
+        height: 35%;
+        margin: 10px;
+    }
+    
+}
+
+
+@media (max-width: 1023px) {
+
+    .iconindex i{
+        width: 100%;
+        height: 35%;
+        margin: 10px;
+    }
+    
+
+    .box-01-index {
+        width: 100%;
+        height: 100%;
+        top:50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+        .form-index-beta {
+            width: 100%;
+            height: 100%;
+        }
+
+    .box-02-index {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box-01-index button {
+        width: 80%;
+        height: 30%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #000000;
+        font-size: 34px;
+        font-family: 'Bahnschrift Regular';
+        border: none;
+        border-radius: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 900px) {
+    .iconindex i{
+        width: 100%;
+        height: 40%;
+        margin: 10px;
+    }
+    
+}
+
+
+.funcionarios:hover{
+    background-color: #8338EC;
+    transform: scale(1.1);
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 5px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.baterponto:hover {
+    background-color: #3A86FF;
+    transform: scale(1.1);
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 5px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.administracao:hover {
+    background-color: #FFBE0B;
+    transform: scale(1.1);
+    margin-left: 70px;
+    margin-right: 70px;
+    border: 5px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.box-icon-administracao-white {
+    display: none;
+}
+
+.box-icon-ponto-white {
+    display: none;
+}
+
+.box-icon-funcionarios-white {
+    display: none;
+}
+
+
+.administracao:hover .box-icon-administracao-white{
+    display: block;
+}
+.administracao:hover .box-icon-administracao-black {
+    display: none;
+}
+
+.baterponto:hover .box-icon-ponto-black {
+    display: none;
+}
+.baterponto:hover .box-icon-ponto-white {
+    display: block;
+}
+
+.funcionarios:hover .box-icon-funcionarios-black {
+    display: none
+}
+.funcionarios:hover .box-icon-funcionarios-white {
+    display: block
+}
+
+
+
+
+
+
+
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(0.7);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media only screen and (max-width:376px) {
+
+    .box-01-index button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+}
