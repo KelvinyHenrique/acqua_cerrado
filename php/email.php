@@ -15,7 +15,8 @@ if($_POST)
     $empty_fields   = "Input fields are empty! Please enter something.";                   // Empty fields
     $name_mssg      = "Name is too short or empty! Please enter something.";               // Name short or empty
     $email_mssg     = "Please enter a valid email!";                                       // Valid email
-    
+    $precos = "Algo Errado com o preço";
+    $pagamento = "Algo errado com o pagamento";
     //Email Text
     $tr_name    = "Name";
     $tr_email   = "Email";
@@ -52,6 +53,8 @@ if($_POST)
     $user_phone       = filter_var($_POST["user_phone"], FILTER_SANITIZE_NUMBER_INT);
     $user_subject     = filter_var($_POST["user_subject"], FILTER_SANITIZE_STRING);
     $user_message     = filter_var($_POST["user_message"], FILTER_SANITIZE_STRING);
+    $user_pagamento     = filter_var($_POST["user_pagamento"], FILTER_SANITIZE_STRING);
+    $user_planos     = filter_var($_POST["user_planos"], FILTER_SANITIZE_NUMBER_INT);
 
     
     if(!empty($user_subject)){
@@ -75,6 +78,18 @@ if($_POST)
     if(strlen($user_message)<10) 
     {
         $output = json_encode(array('type'=>'error', 'text' => $short_mssg));
+        die($output);
+    }
+
+    if(strlen($user_pagamento)<1) 
+    {
+        $output = json_encode(array('type'=>'error', 'text' => $precos));
+        die($output);
+    }
+
+    if(strlen($user_planos)<1) 
+    {
+        $output = json_encode(array('type'=>'error', 'text' => $pagamento));
         die($output);
     }
 

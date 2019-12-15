@@ -514,7 +514,7 @@ Author URI: gnodesign.com
         /*----------------------------------------------------
           CONTACT FORM
         ----------------------------------------------------*/
-        $("#contact-form").on('submit', function (e) {
+        $(".formulario_envio2").on('submit', function (e) {
             e.preventDefault();
 
             //Get input field values from HTML form
@@ -523,6 +523,8 @@ Author URI: gnodesign.com
             var user_phone = $("input[name=phone]").val();
             var user_subject = $("input[name=subject]").val();
             var user_message = $("textarea[name=message]").val();
+            var user_pagamento = $("select[name=pagamento]").val();
+            var user_planos = $("select[name=precos]").val();
 
 
             //Input validation
@@ -549,6 +551,16 @@ Author URI: gnodesign.com
                 proceed = false;
             }
 
+            if (user_subject == "") {
+                $("input[name=precos]").css('border-color', 'red');
+                proceed = false;
+            }
+
+            if (user_subject == "") {
+                $("input[name=pagamento]").css('border-color', 'red');
+                proceed = false;
+            }
+
 
             //Everything it's ok...
             if (proceed) {
@@ -561,7 +573,9 @@ Author URI: gnodesign.com
                     'user_email': user_email,
                     'user_phone': user_phone,
                     'user_subject': user_subject,
-                    'user_message': user_message
+                    'user_message': user_message,
+                    'user_pagamento': user_pagamento,
+                    'user_planos': user_planos
                 };
 
                 //Ajax post data to server
