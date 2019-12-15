@@ -12,8 +12,13 @@ $plano = $_POST['planos'];
 $endereco = $_POST['endereco'];
 $fpagamento = $_POST['fpagamento'];
 
-$to = "contato@acquacerrado.com.br";
-$message = $email."<br/>"."<br/>".$nome.$telefone.$assunto.$plano.$endereco.$fpagamento;
+$to = "contato@acquacerrado.com.br"; 2
+
+$message = $email."<br/>"."<br/>".$nome.$telefone.$assunto.$plano.$endereco.$fpagamento; 
+
+/*$message = "Email: "$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br/>"."Assunto: 
+".$assunto."<br/>"."Plano: ".$plano."<br/>"."Endereço: ".$endereco."<br/>"."Forma de Pagamento: ".$fpagamento;
+*/
 
 $headers = "De:". $email;
 $headers = 'Content-type: text/html;' . "\r\n";
