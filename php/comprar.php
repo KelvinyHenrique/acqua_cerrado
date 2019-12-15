@@ -19,10 +19,11 @@ echo "Email: ".$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br
 $to = "contato@acquacerrado.com.br"; 
 
 $message = "Email: ".$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br/>"."Assunto: 
-".$assunto."<br/>"."Mensagem: "$mensagem."<br/>"."Plano: ".$plano."<br/>"."Endereço: ".$endereco."<br/>"."Forma de Pagamento: ".$fpagamento;
+".$assunto."<br/>"."Mensagem: ".$mensagem."<br/>"."Plano: ".$plano."<br/>"."Endereço: ".$endereco."<br/>"."Forma de Pagamento: ".$fpagamento."<br/>";
 
-$site_title = "AcquaCerrado";
-$headers = 'Content-type: text/html;' . "\r\n".'From: '.$site_title.' <'.$user_email.'>' . PHP_EOL .
+
+$headers = "De:". $email;
+$headers = 'Content-type: text/html;' . "\r\n";
 
 mail($to, $assunto, $message, $headers);
 
