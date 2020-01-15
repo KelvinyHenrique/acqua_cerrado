@@ -263,7 +263,7 @@ nav.navbar {
 }
 
 .navbar-brand img {
-    height: 60px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -2646,3 +2646,10 @@ section#contact .contact-top {
     .selec-comprar { 
     margin: 20px 0;
 }}
+
+.barradenavegacao {
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    flex-direction: row;
+}
