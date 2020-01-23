@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 error_reporting(E_ALL);
 
-if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['subject']) && !empty($_POST['endereco']) && !empty($_POST['message'])) {
+if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['subject']) && !empty($_POST['email']) && !empty($_POST['message'])) {
     
 $nome = $_POST['name'];
 $email = $_POST['email'];
