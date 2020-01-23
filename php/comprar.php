@@ -16,7 +16,7 @@ $to = "contato@acquacerrado.com.br";
     
     
     $message = "Email: ".$email."<br/>"."Nome: ".$nome."<br/>"."Telefone: ".$telefone."<br/>"."Assunto: 
-".$assunto."<br/>"."Mensagem: ".$mensagem."<br/>"."Endereço: ".$endereco."<br/>";
+".$assunto."<br/>"."Mensagem: ".$mensagem."<br/>"."<br/>";
 
 
 $headers = "De:". $email;
