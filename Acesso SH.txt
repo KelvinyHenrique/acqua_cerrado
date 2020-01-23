@@ -1,0 +1,33 @@
+Informações de Acesso SSH
+SSH IP	45.87.80.52
+Porta SSH	65002
+Nome de usuário SSH	u378688217
+Senha SSH	O mesmo que a senha FTP
+Clientes SSH Recomendados	ou
+Comando CLI SSH	ssh -p 65002 u378688217@45.87.80.52
+Acesso SSH
+SSH permite que transmissões seguras de arquivos e logins remotos através da internet. Sua conexão via SSH é criptografa, permitindo uma conexão segura
+Gerenciar acesso SSH*
+Adicionar Chave SSH Pública
+As chaves SSH fornecem uma maneira mais segura de fazer login em um servidor com SSH do que usar apenas uma senha. Gere um par de chaves e adicione sua chave pública abaixo:
+Chave Pública SSH*
+Comandos SSH
+Estes comandos ajudarão a navegar e gerenciar os arquivos do seu site. Para um guia mais detalhado, você pode conferir este artigo https://www.hostinger.com/tutorials/ssh/basic-ssh-commands
+Comando SSH	Explicação
+ls	Exibir conteúdos do diretório (lista de nomes dos arquivos)
+cd	Mudar Diretório.
+mkdir	Criar uma nova pasta (diretório)
+touch	Criar um novo arquivo.
+rm	Remover um arquivo.
+cat	Exibir conteúdos dos arquivos.
+pwd	Exibir diretório atual (caminho completo para onde você está exatamente agora).
+cp	Copiar arquivo/pasta.
+mv	Mover arquivo/pasta.
+grep	Pesquisar por uma frase específica em arquivos/linhas.
+find	Pesquisar arquivos e diretórios.
+vi/nano	Editores de texto.
+history	Exibir os últimos 50 comandos usados.
+clear	Limpar a tela do terminal.
+tar	Criar e descompactar arquivos compactados.
+wget	Baixar arquivos da internet.
+du	Obter tamanho do arquivo.
