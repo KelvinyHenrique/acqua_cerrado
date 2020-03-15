@@ -102,6 +102,22 @@ if($_POST)
     
     $message = "Name: $user_name <br> -- Email: $user_email <br> Phone Number: $user_phone <br> -- Message: $user_message";
     
+    //TESTE
+    try {
+        $username = "u378688217_zbx";
+    $password = "48263590+l";
+        $pdoConn = new PDO('mysql:host=45.87.80.52;dbname=u378688217_data', $username, $password);
+        $pdoConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+    
+    } catch(PDOException $e) {
+        echo 'ERROR: ' . $e->getMessage();
+    }
+
+
+    $sql = $pdoConn->prepare("INSERT INTO clientes SET email = $email, cliente = $message");
+
+    // FIM TESTE
+
     $sendemail = @mail($to_email, $subject, $message, $headers);
     
     if(!$sendemail)
