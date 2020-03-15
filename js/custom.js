@@ -526,7 +526,7 @@ Author URI: gnodesign.com
                     url: './php/email.php',
                     data: txt,
                     success:function(resultado){
-                    $('#contact-result').html(resultado);
+                        alert("Mensagem enviada com Sucesso!");
                     },
                     error:function(){
                         alert("Ocorreu um erro!");
