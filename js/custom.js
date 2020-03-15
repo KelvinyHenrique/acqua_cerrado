@@ -514,96 +514,32 @@ Author URI: gnodesign.com
         /*----------------------------------------------------
           CONTACT FORM
         ----------------------------------------------------*/
-        $(".formulario_envio2").on('submit', function (e) {
-            e.preventDefault();
-
-            //Get input field values from HTML form
-            var user_name = $("input[name=name]").val();
-            var user_email = $("input[name=email]").val();
-            var user_phone = $("input[name=phone]").val();
-            var user_subject = $("input[name=subject]").val();
-            var user_message = $("textarea[name=message]").val();
-            var user_pagamento = $("select[name=pagamento]").val();
-            var user_planos = $("select[name=precos]").val();
-
-
-            //Input validation
-            var proceed = true; //Set proceed as true
-
-            //If empty set border colors red
-            if (user_name == "") {
-                $("input[name=name]").css('border-color', 'red');
-                proceed = false;
-            }
-
-            if (user_email == "") {
-                $("input[name=email]").css('border-color', 'red');
-                proceed = false;
-            }
-
-            if (user_message == "") {
-                $("textarea[name=message]").css('border-color', 'red');
-                proceed = false;
-            }
-
-            if (user_subject == "") {
-                $("input[name=subject]").css('border-color', 'red');
-                proceed = false;
-            }
-
-            if (user_subject == "") {
-                $("input[name=precos]").css('border-color', 'red');
-                proceed = false;
-            }
-
-            if (user_subject == "") {
-                $("input[name=pagamento]").css('border-color', 'red');
-                proceed = false;
-            }
-
-
-            //Everything it's ok...
-            if (proceed) {
-
-                //Data to be sent to server
-                var post_data;
-                var output;
-                post_data = {
-                    'user_name': user_name,
-                    'user_email': user_email,
-                    'user_phone': user_phone,
-                    'user_subject': user_subject,
-                    'user_message': user_message,
-                    'user_pagamento': user_pagamento,
-                    'user_planos': user_planos
-                };
-
-                //Ajax post data to server
-                $.post('php/email.php', post_data, function (response) {
-
-                    //Response server message
-                    if (response.type == 'error') {
-                        output = '<div class="alert alert-danger">' + response.text + '</div>';
-
-                    } else {
-                        output = '<div class="alert alert-success">' + response.text + '</div>';
-                        //If success clear inputs
-                        $("input").val('');
-                        $("textarea").val('');
+        $(function(){
+            $('#contact-form').bind('submit', function(e){
+                e.preventDefault();
+        
+                var txt = $(this).serialize();
+                console.log(txt);
+        
+                $.ajax({
+                    type: 'POST',
+                    url: './php/email.php',
+                    data: txt,
+                    success:function(resultado){
+                    $('#contact-result').html(resultado);
+                    },
+                    error:function(){
+                        alert("Ocorreu um erro!");
                     }
-
-                    $("#contact-result").fadeIn(500).html(output).fadeIn(500);
-                    $("#contact-result").delay(5000).fadeOut(1000);
-                }, 'json');
-
-            }
+                })
+            });
         });
 
-        //Reset border colors
-        $("input, textarea").on("change keyup", function (event) {
-            $("input, textarea").css('border-color', '');
-            $("#contact-result").fadeOut(500);
-        });
+
+
+         /*----------------------------------------------------
+          FIM CONTACT FORM
+        ----------------------------------------------------*/
 
 
 

@@ -18,11 +18,6 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
 ?>
 
 
-
-
-
-
-
 <form method="POST">
 Nome:<br/>
 <input type="text" name="nome"><br/>
